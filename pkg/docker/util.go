@@ -438,9 +438,9 @@ func GetDefaultDockerConfig() *api.DockerConfig {
 		cfg.TLSVerify = true
 	}
 
-    if useTLS := os.Getenv("DOCKER_TLS"); useTLS != "" {
-        cfg.UseTLS = true
-    }
+	if useTLS := os.Getenv("DOCKER_TLS"); useTLS != "" {
+		cfg.UseTLS = true
+	}
 
 	return cfg
 }
